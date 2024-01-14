@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/aarontanjaya/finance-data-collector v0.0.0-20240113150952-36585b7bc705
 	github.com/joho/godotenv v1.5.1
+	github.com/robfig/cron v1.2.0
 	gorm.io/driver/postgres v1.5.2
 	gorm.io/gorm v1.25.4
 )

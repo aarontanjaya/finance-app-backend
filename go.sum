@@ -1,7 +1,3 @@
-github.com/aarontanjaya/finance-data-collector v0.0.0-20231005143340-825c4986f7bf h1:UJD6K4ZM+aYjqBH2pKsk8M5Tvs7Oe7iR0uxb3ev1VOw=
-github.com/aarontanjaya/finance-data-collector v0.0.0-20231005143340-825c4986f7bf/go.mod h1:uIeIuF9710TRWtwQkr/G10gUXFB7mMTwnSal6KMUPaI=
-github.com/aarontanjaya/finance-data-collector v0.0.0-20231007125028-8446829f6b2d h1:fTw8gqxuBxSwBlTeR6HWr3kx3SLqTqPOvS2T5ZRKf2I=
-github.com/aarontanjaya/finance-data-collector v0.0.0-20231007125028-8446829f6b2d/go.mod h1:uIeIuF9710TRWtwQkr/G10gUXFB7mMTwnSal6KMUPaI=
 github.com/aarontanjaya/finance-data-collector v0.0.0-20240113150952-36585b7bc705 h1:BIrrWO5wfjKrzQp6mrIpEBmM6uhy8Az64T7j8Cw/zLQ=
 github.com/aarontanjaya/finance-data-collector v0.0.0-20240113150952-36585b7bc705/go.mod h1:uIeIuF9710TRWtwQkr/G10gUXFB7mMTwnSal6KMUPaI=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -20,6 +16,8 @@ github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/robfig/cron v1.2.0 h1:ZjScXvvxeQ63Dbyxy76Fj3AT3Ut0aKsyd2/tl3DTMuQ=
+github.com/robfig/cron v1.2.0/go.mod h1:JGuDeoQd7Z6yL4zQhZ3OPEVHB7fL6Ka6skscFHfmt2k=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
