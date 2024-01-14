@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS "fund_snapshot"(
     "isin_code" VARCHAR(12),
     "name" TEXT,
     "im_name" TEXT,
-    "im_fee" NUMERIC,
+    "im_fee" VARCHAR,
     "type" VARCHAR(32),
     "type_id" INTEGER,
     "index_flag" BOOLEAN,
@@ -17,13 +17,16 @@ CREATE TABLE IF NOT EXISTS "fund_snapshot"(
     "ytd_rr" NUMERIC,
     "yearly_rr" NUMERIC,
     "aum" NUMERIC,
-    "aum_updated_at" INTEGER,
+    "aum_updated_at" NUMERIC,
     "units" NUMERIC,
-    "last_update" INTEGER,
+    "last_update" NUMERIC,
     "created_at" TIMESTAMP WITH TIME ZONE,
     "updated_at" TIMESTAMP WITH TIME ZONE,
     "deleted_at" TIMESTAMP WITH TIME ZONE
 );
+
+ALTER TABLE public.fund_snapshots ADD CONSTRAINT fund_snapshots_uk UNIQUE KEY ("last_update",id);
+
 
 /* chunk_time_interval 1 week */
 SELECT create_hypertable('fund_snapshot', 'last_update', chunk_time_interval => 604800);

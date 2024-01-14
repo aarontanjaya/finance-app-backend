@@ -2,6 +2,7 @@ package db
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"os"
 
@@ -21,10 +22,18 @@ func getLogger() logger.Interface {
 		log.Println(err)
 	}
 
+	file, err := os.OpenFile("log.txt", os.O_RDWR|os.O_APPEND|os.O_CREATE, 0660)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "Failed to initialize file for logger")
+	}
+
+	logs := io.MultiWriter(os.Stdout, file)
+
 	return logger.New(
-		log.New(os.Stdout, "\r\n", log.LstdFlags),
+		log.New(logs, "\r\n", log.LstdFlags),
 		logger.Config{
-			LogLevel: logger.Info,
+			LogLevel:                  logger.Info,
+			IgnoreRecordNotFoundError: true,
 		},
 	)
 }
